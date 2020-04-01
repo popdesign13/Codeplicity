@@ -1,0 +1,39 @@
+/*************** FORM ***************/
+
+.form {
+    margin: 20px 0px;
+
+    &__control {
+        background: none;
+        color: $color-text;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        padding: 7px 0px;
+        border: 2px solid $color-button-outline;
+        border-radius: 4px;
+        margin: 5px 0;
+
+        &:nth-child(1) {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+    
+        &::placeholder {
+            color: $color-text;  
+            opacity: 1;            
+        }
+
+        &:focus {
+            border: 2px solid $color-button;
+        }
+        
+        &:focus::placeholder {
+            color: transparent;
+        }
+    }
+
+    
+    
+}
