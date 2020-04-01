@@ -34,6 +34,48 @@
         }
     }
 
+    &__section {    
+        width: 100%;
+        position: relative;
+    
+        &:after {
+            content: "▼";
+            padding: 12px 10px;
+            position: absolute;
+            right: -10px;
+            top: 0;
+            z-index: 1;
+            text-align: center;
+            scale: 0.7;
+            pointer-events: none;
+        }
+    }
+
+    &__select {
+        background: none;
+        color: $color-text;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        padding: 5px 0;
+        border: 2px solid $color-button-outline;
+        border-radius: 4px;
+        margin: 5px 0;    
+        cursor:pointer; 
+        -webkit-appearance: none;
+        /* for webkit browsers */
+        -moz-appearance: none;
+        /* for firefox */
+        appearance: none;
+        /* for modern browsers */
+
+        &::-ms-expand {
+            display: none;
+          }  
+
+    }
+
     
     
 }
