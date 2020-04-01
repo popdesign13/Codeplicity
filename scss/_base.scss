@@ -39,5 +39,36 @@ img {
 }
 
 
+/********************* CONTENT ***********************/
+
+.content {
+    padding: 5px 20px 0px 20px;
+
+    &__img {
+        margin: 0px 0 10px 0;
+
+        &--image {
+            max-width: 100%;
+        }
+    } 
+
+    &__form {
+        
+        &-title {
+            font-size: 2rem;
+            text-transform: uppercase;
+            text-align: right;
+        }
+
+        &-subtitle {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            text-align: right;
+        }
+       
+    }    
+    
+}
+
 
 
