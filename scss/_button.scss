@@ -1,0 +1,28 @@
+/************ buttons *************/
+
+.btn {      
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &--nav {
+        padding: 5px 12px;
+        background: none;    
+        font-size: 0.7rem;
+        border: 2px solid $color-button-outline;
+        border-radius: 30px;
+        color: $color-text;
+
+        &:hover {
+            background-color: $color-button;
+            color: $color-text;
+        }    
+    }
+
+}
+
+
+
+
+
+
