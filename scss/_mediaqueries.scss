@@ -1,0 +1,41 @@
+/************************************************************/
+/************* small tablet styles, iPad, Kindle  ***********/
+/************************************************************/
+
+@media screen and (min-width: 768px) {    
+    
+    .content {        
+        display: flex;
+        padding: 0 25px; 
+
+        &__form {
+            width: 40%;
+            padding-left: 25px;
+        }
+
+        &__img {
+            width: 60%;            
+            margin-bottom: -3px;
+        }
+    }
+
+    .social {
+        &__grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+
+            &--img {
+                width: 64%;
+            }
+        }
+    }
+    
+
+    .footer {            
+        &__note {
+            font-size: 0.5rem;
+            padding-left: 200px;   
+        }
+    }
+}
