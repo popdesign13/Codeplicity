@@ -132,3 +132,94 @@
     }
     
 }
+
+
+/************************************************************/
+/********************** desktop styles  *********************/
+/************************************************************/
+
+@media screen and (min-width: 1200px) {
+    .header, .content, .social__grid, .footer {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .content {        
+        display: flex;
+        padding: 0 25px; 
+
+        &__form {
+            width: 40%;
+            padding-left: 25px;
+            padding-top: 60px;
+
+            &-title {
+                font-size: 2.5rem;
+            }
+    
+            &-subtitle {
+                font-size: 1rem;
+            }
+        }
+
+        &__img {
+            width: 60%;
+            vertical-align: bottom;
+        }
+    }
+    
+    .form {            
+        &__control {
+            padding: 15px 0px;    
+                  
+            &::placeholder {
+                font-size: 1rem;            
+            }
+        } 
+
+        &__section {
+            &:after {                
+                padding-top: 27px;                
+                right: 0px;
+                top: 10;                
+                scale: 1.2;                
+            }
+        }
+        
+        &__select {
+            padding: 20px 0px;
+            font-size: 1rem;
+        }
+    } 
+
+    .submit {            
+        &--joinus {            
+            font-size: 2rem;
+        }
+    }
+
+
+    .social {
+        background: $color-secondary;
+        text-align: center;
+        padding: 20px;
+    
+        &__title {            
+            font-size: 1rem;
+        }
+    
+        &__grid {            
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            padding: 30px;
+        }
+    }
+
+    .footer {            
+        &__note {
+            font-size: 0.6rem;
+            padding-left: 250px;   
+        }
+    }
+   
+}
