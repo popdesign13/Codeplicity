@@ -101,7 +101,26 @@ img {
 }
 
 
+/******************* footer ******************/
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    &__logo {
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+
+    &__note {
+        font-size: 0.3rem;
+        text-transform: uppercase;
+        text-align: right;
+        padding-left: 15px;
+    }
+}
 
 
 
