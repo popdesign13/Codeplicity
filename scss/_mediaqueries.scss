@@ -39,3 +39,96 @@
         }
     }
 }
+
+
+/************************************************************/
+/*************** large tablets & laptop styles  *************/
+/************************************************************/
+
+@media screen and (min-width: 960px) {
+        
+    .content {        
+        display: flex;
+        padding: 0 25px; 
+
+        &__form {
+            width: 50%;
+            padding-left: 25px;
+        }
+
+        &__img {
+            width: 50%;
+            vertical-align: bottom;
+        }
+    }
+
+    .social {
+        &__grid {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            justify-items: center;
+
+            &--img {
+                max-width: 64%;
+            }
+        }
+    }
+
+    .footer {            
+        &__note {
+            font-size: 0.5rem;
+            padding-left: 200px;   
+        }
+    }
+
+    .submit {            
+        &--joinus {            
+            font-size: 1.5rem;
+        }
+    }
+
+    .form__checkbox {        
+        font-size: 0.7rem;
+    }
+
+    .form {            
+        &__control {
+            padding: 15px 0px;    
+                  
+            &::placeholder {
+                font-size: 0.8rem;            
+            }
+        } 
+
+        &__section {
+            &:after {                
+                padding-top: 23px;                
+                right: 0px;           
+                transform: scale(1);                
+            }
+        }
+        
+        &__select {
+            padding: 15px 0px;
+            font-size: 0.8rem;
+        }
+    }  
+
+    .btn {
+        &--nav {
+            padding: 7px 16px;
+            background: none;    
+            font-size: 0.9rem;
+            border: 2px solid $color-button-outline;
+            border-radius: 30px;
+            color: $color-text;
+    
+            &:hover {
+                background-color: $color-button;
+                color: $color-text;
+            }    
+        }
+    
+    }
+    
+}
